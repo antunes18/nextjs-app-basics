@@ -1,3 +1,26 @@
+import Link from "next/link";
+
 export default function SecondPost() {
-    return <h2>Second post</h2>
+  return (
+    <>
+      <h1>Second Post</h1>
+      <h2>
+        <Link href="/">
+          <a>Index page</a>
+        </Link>
+      </h2>
+      <h3>
+        <Link href="/posts/first-post">
+          <a className="foo" target="_blank">
+            First Post page
+          </a>
+        </Link>
+      </h3>
+      <h4>
+        <a href="https://nextjs.org/" target="_blank">
+          Next.js website
+        </a>
+      </h4>
+    </>
+  );
 }
